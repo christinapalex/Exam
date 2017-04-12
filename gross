@@ -1,0 +1,10 @@
+echo "Enter the basic salary"
+read basicsalary
+t=$basicsalary
+echo "basic salary"
+da=`expr 50/100 \* $t`
+hra=`expr 10/100 \* $t`
+ta=`expr 250 \* 12 `
+grosssalary=$(($da+$hra+$ta))
+echo "grosssalary is" $grosssalary
+
